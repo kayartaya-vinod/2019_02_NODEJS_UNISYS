@@ -1,6 +1,7 @@
 const ContactService = require('../service/contact-service');
 const assert = require('assert');
 const { expect } = require("chai");
+const should = require('chai').should();
 
 // defines a new test suite
 describe('Testing ContactService class functions', function () {
@@ -31,6 +32,12 @@ describe('Testing ContactService class functions', function () {
             let c = service.getById(1);
             expect(c).to.be.a('object');
             expect(c).to.have.property('name').to.equal('Billi Ledwich');
+        });
+
+        it('should get a contact for id 3', function(){
+            let c = service.getById(3);
+            c.should.be.a('object');
+            c.should.have.property('email').to.equal('rgimlet2@themeforest.net');
         });
     });
 }); 
