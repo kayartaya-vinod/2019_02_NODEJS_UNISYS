@@ -1,0 +1,22 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "This is a demo package",
+  "main": "ex01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kayartaya-vinod"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "Vinod <vinod@vinod.co>",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  }
+}
