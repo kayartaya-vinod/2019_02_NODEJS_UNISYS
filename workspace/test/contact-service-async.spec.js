@@ -66,10 +66,10 @@ describe('Testing Async version of ContactService', function () {
             finished();
 
         });
-    });
+    }).timeout(5000);
 
     it('shuld not add a contact without name', function (done) {
-
+        this.timeout(5000);
         let c = {};
         service.addNewContact(c, (err, data) => {
             expect(err).to.be.a('object');

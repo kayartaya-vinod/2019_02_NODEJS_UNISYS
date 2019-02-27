@@ -5,7 +5,7 @@ const should = require('chai').should();
 
 // defines a new test suite
 // 'x' prefix on a suite or spec marks that for skip
-xdescribe('Testing ContactService class functions', function () {
+describe('Testing ContactService class functions', function () {
 
     let service;
 
