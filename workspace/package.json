@@ -16,6 +16,7 @@
   "author": "Vinod <vinod@vinod.co>",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "express": "^4.16.4",

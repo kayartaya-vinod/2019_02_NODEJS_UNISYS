@@ -110,10 +110,10 @@ module.exports.updateContact = (contact) => new Promise((resolve, reject) => {
         reject('required fields missing: ' + missingFields.join());
     }
 
-    try{
+    try {
         contact._id = ObjectId(contact._id);
     }
-    catch(err) {
+    catch (err) {
         reject(err);
     }
 
@@ -122,7 +122,7 @@ module.exports.updateContact = (contact) => new Promise((resolve, reject) => {
 
         const unisysdb = conn.db('unisysdb');
         const contacts = unisysdb.collection('contacts');
-        contacts.save(contact, (err) => {
+        contacts.update(contact, (err) => {
             conn.close();
             if (err) reject(err);
             resolve(contact);
