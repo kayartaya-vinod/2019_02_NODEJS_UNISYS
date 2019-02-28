@@ -8,4 +8,5 @@ Check out my courses on Udemy:
 
 Use the coupon code <b><span style="background-color: yellow">MEMBER</span></b> for availing maximum discount
 
-<img src="./reading-material/my-udemy-courses.png">
+<a href="https://www.udemy.com/user/vinod-197/">
+<img src="./reading-material/my-udemy-courses.png"></a>
