@@ -4,3 +4,6 @@
 
 ### short URL for this page: http://bit.ly/2EeUd3J
 
+Check out my courses on Udemy:
+
+<img src="./reading-material/my-udemy-courses.png">
