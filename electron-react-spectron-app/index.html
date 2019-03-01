@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>BPJS Electron</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+<script>
+  console.log('I am updated');
+
+  // if (process.env.NODE_ENV === 'test') {
+    require('babel-register')({
+      presets: [
+        ['env', {
+          targets: {
+            electron: 1.6
+          },
+        }],
+        'react',
+      ],
+    });
+    require('./src/index.js');
+  // } else {
+  //   require('./src/app.min.js');
+  // }
+</script>
+
+</html>

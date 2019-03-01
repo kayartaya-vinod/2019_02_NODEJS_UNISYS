@@ -4,7 +4,9 @@
   "description": "This is a demo package",
   "main": "ex01.js",
   "scripts": {
-    "test": "mocha ./test/*.spec.js"
+    "test": "mocha ./test/*.spec.js",
+    "ava": "ava --verbose",
+    "ava:watch": "ava --verbose --watch"
   },
   "repository": {
     "type": "git",
@@ -16,11 +18,22 @@
   "author": "Vinod <vinod@vinod.co>",
   "license": "MIT",
   "dependencies": {
+    "@babel/register": "^7.0.0",
+    "ava": "^1.2.1",
     "body-parser": "^1.18.3",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "express": "^4.16.4",
     "mocha": "^6.0.2",
-    "mongodb": "^3.1.13"
+    "mongodb": "^3.1.13",
+    "supertest": "^3.4.2"
+  },
+  "ava": {
+    "files": [
+      "ava-tests/**/*.spec.js"
+    ],
+    "require": [
+      "@babel/register"
+    ]
   }
 }
